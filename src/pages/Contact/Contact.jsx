@@ -24,10 +24,11 @@ const Contact = () => {
          Swal.fire({
   position: "center",
   icon: "success",
-  title: "Message Send Successfully",
+  title: "Message Sent Successfully",
   showConfirmButton: false,
   timer: 1500
 });
+form.current.reset();
         },
         (error) => {
            console.log("FAILED...", error.text);
@@ -87,8 +88,8 @@ const Contact = () => {
     required
     placeholder="Username"
     pattern="[A-Za-z][A-Za-z0-9\-]*"
-    minlength="3"
-    maxlength="30"
+    minLength="3"
+    maxLength="30"
     title="Only letters, numbers or dash"
     name="from_name"
   />

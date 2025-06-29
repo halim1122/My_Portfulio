@@ -26,7 +26,8 @@ const projectsData = [
       "Add email reminders for watering days",
       "Expand to support multiple user plant collections",
       "Designing a fully dynamic dashboard"
-    ]
+    ],
+    side:"left"
   },
   {
     id: "booknest",
@@ -60,7 +61,8 @@ const projectsData = [
       "Admin panel for adding/removing books",
       "User borrow history and due date system",
       "Improve search filter using fuzzy search"
-    ]
+    ],
+    side: "up"
   },
   {
     id: "bill-management",
@@ -90,7 +92,8 @@ const projectsData = [
       "Add downloadable payment receipts (PDF)",
       "Show transaction history with filters",
       "Admin dashboard for bill analytics"
-    ]
+    ],
+    side: "right"
   },
 ];
 

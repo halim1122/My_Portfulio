@@ -22,7 +22,7 @@ const ProjectDetails = () => {
 
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left Side: All except key features */}
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3" data-aos="fade-right">
           <img src={project.image} className="rounded mb-4 w-full" />
           <h2 className="text-3xl font-bold mb-2">{project.title}</h2>
           <p className="text-gray-300 mb-4">{project.description}</p>
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
         </div>
 
         {/* Right Side: Key Features Only */}
-        <div className="lg:w-1/3 bg-[#1f2937] rounded-xl p-5 shadow-lg border border-indigo-500 h-fit">
+        <div className="lg:w-1/3 bg-[#1f2937] rounded-xl p-5 shadow-lg border border-indigo-500 h-fit" data-aos="fade-left">
           <h4 className="text-xl font-semibold text-purple-400 mb-3">
             🔑 Key Features
           </h4>

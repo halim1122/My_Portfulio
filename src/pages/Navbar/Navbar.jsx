@@ -1,21 +1,45 @@
 import React from "react";
-import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
-      const linkStyle = "hover:text-green-400 transition";
 
     	const links = <>
     <>
-      <li><a href="#home" className={linkStyle}>Home</a></li>
-      <li><a href="#about" className={linkStyle}>About</a></li>
-      <li><a href="#portfolio" className={linkStyle}>Portfolio</a></li>
-      <li><a href="#contact" className={linkStyle}>Contact</a></li>
+      <li><a href="#home" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>Home</a></li>
+      <li><a href="#about" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>About</a></li>
+      <li><a href="#skills" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>Skills</a></li>
+      <li><a href="#portfolio" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>Portfolio</a></li>
+      <li><a href="#education" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>Education</a></li>
+      <li><a href="#contact" className={({ isActive }) =>
+          isActive
+            ? "bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+            : "text-gray-500"
+        }>Contact</a></li>
     </>
 
 </>
 
   return (
-<nav className="sticky top-0 z-10  bg-opacity-80 backdrop-blur ">
+<nav className="sticky top-0 z-10 bg-opacity-80 backdrop-blur ">
     <div className="navbar ">
       <div className="navbar-start">
         <div className="dropdown">
@@ -43,9 +67,9 @@ const Navbar = () => {
             {links}
         </ul>
         </div>
-<Link to={"#home"} className="text-xl font-bold bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent">
+<a href="#home" className="text-xl font-bold bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent">
   Atik Hassan
-</Link>
+</a>
       </div>
       <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

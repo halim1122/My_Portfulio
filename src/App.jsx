@@ -7,6 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SkillsSection from './pages/About/SkillsSection';
 import Education from './pages/Education/Education';
+import Projects from './pages/Projects/Projects';
+import { Route, Routes } from 'react-router';
+import ProjectDetails from './pages/Projects/ProjectDetails';
 
 function App() {
   useEffect(() => {
@@ -18,12 +21,25 @@ function App() {
   }, []);
   return (
     <>
-      <div className='max-w-7xl mx-auto'>
-    <Navbar /> 
-    <Home />
-    <About />
-        <SkillsSection />
-        <Education />
+      <div className="max-w-7xl mx-auto">
+        <Navbar />
+
+        {/* Routing setup */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <About />
+                <SkillsSection />
+                <Education />
+                <Projects />
+              </>
+            }
+          />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} />
+        </Routes>
       </div>
     </>
   )

@@ -1,9 +1,12 @@
 import React, { useRef } from 'react';
 import { BsSend } from 'react-icons/bs';
 import { FiMessageCircle } from 'react-icons/fi';
-import { IoShareSocialOutline } from 'react-icons/io5';
+import { IoLocationOutline, IoShareSocialOutline } from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { CiPhone } from 'react-icons/ci';
+import { FaWhatsapp } from 'react-icons/fa';
+import { MdOutlineEmail } from 'react-icons/md';
 
 
 const Contact = () => {
@@ -40,7 +43,8 @@ const Contact = () => {
   };
 
     return (
-        <div id='contact' className='py-10 my-5'>
+        <div id='contact' className=' my-10'>
+            
             <div className='text-center space-y-2 mb-5'>
                             <h1 data-aos="flip-up" className='text-5xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent'>Contact Me</h1>
             <p className='text-gray-300'>Got a question? Send me a message, and I'll get back to you soon.</p>
@@ -48,7 +52,15 @@ const Contact = () => {
 
             <div className='p-5 cutomglass max-w-2xl mx-auto'>
 
-                <div data-aos="fade-right" className='customglass2 p-8'>
+                <div data-aos="fade-right" className='customglass2 p-5 px-8'>
+                                         <div className='inputglass my-5 p-5 space-y-1'>
+
+                     <h2 className='text-3xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent mb-2'>Contact Info</h2>
+                    <p className='flex items-center gap-1 text-gray-300'><IoLocationOutline />Jashore,Khulna,Bangladesh</p>
+                    <p className='flex items-center gap-1 text-gray-300'><CiPhone />01575537735</p>
+                    <p className='flex items-center gap-1 text-gray-300'><MdOutlineEmail />atikh01003@gmail.com</p>
+                    </div>
+                <hr className='border-gray-500 mb-3'/>
                     <div className='flex justify-between mb-5'>
                         <div className='space-y-2'>
                             <h1 className='text-3xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent'>Get in Touch</h1>
@@ -56,7 +68,6 @@ const Contact = () => {
                         </div>
                         <IoShareSocialOutline className='text-indigo-400' size={40}/>
                     </div>
-
                     <form ref={form} onSubmit={sendEmail} className='space-y-4'>
                         <label className="input validator h-14 inputglass w-full">
   <svg className="h-[1.6em] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -121,6 +132,8 @@ const Contact = () => {
             <BsSend />Send Message
           </button>
                     </form>
+
+
                 </div>
 
             </div>

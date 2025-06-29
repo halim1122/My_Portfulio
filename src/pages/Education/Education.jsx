@@ -34,7 +34,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-16 bg-gray-950 text-white px-4"
+      className="py-16 bg-gray-950 text-white px-4 overflow-hidden"
       data-aos="fade-up"
     >
       {/* Gradient Title */}

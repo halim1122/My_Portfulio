@@ -10,6 +10,9 @@ import Education from './pages/Education/Education';
 import Projects from './pages/Projects/Projects';
 import { Route, Routes } from 'react-router';
 import ProjectDetails from './pages/Projects/ProjectDetails';
+import Contact from './pages/Contact/Contact';
+import Footer from './pages/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -21,20 +24,22 @@ function App() {
   }, []);
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <Navbar />
-
+      <div className="max-w-7xl mx-auto scroll-smooth">
+        <ScrollToTop />
         {/* Routing setup */}
         <Routes>
           <Route
             path="/"
             element={
               <>
+              <Navbar />
                 <Home />
                 <About />
                 <SkillsSection />
                 <Education />
                 <Projects />
+                <Contact />
+                <Footer />
               </>
             }
           />

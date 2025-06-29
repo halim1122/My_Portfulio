@@ -4,16 +4,22 @@ import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa";
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 bg-[#0f0f1a] text-white">
+    <section id="portfolio" className="py-20 my-5 px-4 bg-[#0f0f1a] text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent" data-aos="zoom-in">
           My Projects
         </h2>
 
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
           {projectsData.map((project, idx) => (
-            <div
+            <div data-aos={
+                project.side ==="left"? "fade-right"
+                : project.side ==="right"? "fade-left"
+                : project.side ==="up" ? "fade-up" 
+                : "fade-in"
+            }
+            data-aos-delay="100"
               key={idx}
 className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-5 shadow-lg hover:shadow-purple-600/30 transition duration-300"
             >

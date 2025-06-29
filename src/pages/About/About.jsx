@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 px-4 text-center max-w-4xl mx-auto"
+      className="py-8 px-4 text-center max-w-4xl mx-auto overflow-hidden"
       data-aos="zoom-in-up"
     >
       <h1
@@ -36,11 +36,18 @@ const About = () => {
         className="mt-10 flex flex-col md:flex-row justify-center gap-4"
         data-aos="zoom-out-up"
       >
-        <a href="/AtikHassan_CV.pdf" download>
+        {/* <a href="/AtikHassan_CV.pdf" download>
           <button className="btn bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-500 text-white">
             <IoDocumentTextOutline /> Download CV
           </button>
-        </a>
+        </a> */} 
+        {/* eta thak jkhn CV banano hoye jabe..eta diye try korbo */}
+
+
+          <button className="btn bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-500 text-white">
+            <IoDocumentTextOutline /> Download CV
+          </button>
+          
         <a href="#portfolio">
           <button className="btn btn-outline text-white border-purple-500 hover:bg-purple-600 hover:text-white transition">
             <PiBracketsAngleBold /> View Projects

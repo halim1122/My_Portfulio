@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
       const linkStyle = "hover:text-green-400 transition";
@@ -43,9 +43,9 @@ const Navbar = () => {
             {links}
         </ul>
         </div>
-<a className="text-xl font-bold bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent">
+<Link to={"#home"} className="text-xl font-bold bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent">
   Atik Hassan
-</a>
+</Link>
       </div>
       <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

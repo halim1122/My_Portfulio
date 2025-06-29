@@ -27,11 +27,14 @@ const Contact = () => {
 });
         },
         (error) => {
-          Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: ('FAILED...', error.text),
-});
+           console.log("FAILED...", error.text);
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Failed to send message",
+      text: "Please try again later.",
+      confirmButtonColor: "#8b5cf6", // Tailwind purple-500
+    });
         },
       );
   };

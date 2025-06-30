@@ -18,7 +18,7 @@ This portfolio website is built to highlight my web development journey and demo
 
 ## 🛠️ Technologies Used
 - React.js
-- CSS / Tailwind CSS (if applicable)
+- Tailwind CSS
 - React Icons
 - Netlify (for deployment)
 

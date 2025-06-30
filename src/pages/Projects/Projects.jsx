@@ -2,9 +2,11 @@ import React from "react";
 import projectsData from "./projectsData";
 import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa";
+import { Element } from "react-scroll";
 const Projects = () => {
   return (
-    <section id="portfolio" className="py-20 my-5 px-4 bg-[#0f0f1a] text-white">
+    <Element name="portfolio">
+    <section className="py-20 my-5 px-4 bg-[#0f0f1a] text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent" data-aos="zoom-in">
           My Projects
@@ -56,6 +58,7 @@ className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-5 shadow-l
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 

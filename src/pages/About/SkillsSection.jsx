@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Element } from 'react-scroll';
 
 const allSkills = [
   { name: 'HTML', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
@@ -18,7 +19,8 @@ const allSkills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills"  className="py-16 px-4 max-w-6xl mx-auto">
+    <Element name='skills'>
+    <section className="py-16 px-4 max-w-6xl mx-auto">
       <h2 data-aos="flip-up" className="text-4xl font-bold text-center mb-10 ">
        <span className='bg-gradient-to-r from-blue-500 via-purple-600 to-purple-500 bg-clip-text text-transparent'> My Skills</span>
       </h2>
@@ -43,6 +45,7 @@ const SkillsSection = () => {
         </div>
       </motion.div>
     </section>
+    </Element>
   );
 };
 

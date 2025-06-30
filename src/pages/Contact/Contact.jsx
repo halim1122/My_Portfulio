@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import { CiPhone } from 'react-icons/ci';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
+import { Element } from 'react-scroll';
 
 
 const Contact = () => {
@@ -44,7 +45,8 @@ form.current.reset();
   };
 
     return (
-        <div id='contact' className=' my-10'>
+          <Element name='contact'>
+        <div className=' my-10'>
             
             <div className='text-center space-y-2 mb-5'>
                             <h1 data-aos="flip-up" className='text-5xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent'>Contact Me</h1>
@@ -139,6 +141,7 @@ form.current.reset();
 
             </div>
         </div>
+        </Element>
     );
 };
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import { PiBracketsAngleBold } from "react-icons/pi";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import { Element, Link } from 'react-scroll';
 
 const About = () => {
   return (
+          <Element name="about">
     <section
-      id="about"
       className="py-8 px-4 text-center max-w-4xl mx-auto overflow-hidden"
       data-aos="zoom-in-up"
     >
@@ -48,14 +49,15 @@ const About = () => {
             <IoDocumentTextOutline /> Download CV
           </button>
           
-        <a href="#portfolio">
+        <Link to="portfolio">
           <button className="btn btn-outline text-white border-purple-500 hover:bg-purple-600 hover:text-white transition">
             <PiBracketsAngleBold /> View Projects
           </button>
-        </a>
+        </Link>
       </div>
 
     </section>
+    </Element>
   );
 };
 

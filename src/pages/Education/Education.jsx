@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGraduationCap, FaSchool } from "react-icons/fa";
 import { MdSchool } from "react-icons/md";
+import { Element } from "react-scroll";
 
 const education = [
   {
@@ -32,6 +33,7 @@ const education = [
 
 const Education = () => {
   return (
+        <Element name='education'>
     <section
       id="education"
       className="py-16 bg-gray-950 text-white px-4 overflow-hidden"
@@ -84,6 +86,8 @@ const Education = () => {
         </div>
       </div>
     </section>
+        </Element>
+
   );
 };
 

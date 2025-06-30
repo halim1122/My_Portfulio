@@ -5,11 +5,12 @@ import { IoArrowDownCircleOutline } from "react-icons/io5";
 import atik from '../../assets/atik.png'
 import { MdOutlineMail } from "react-icons/md";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { Link } from 'react-router';
+import { Link,Element } from 'react-scroll';
 
 const Home = () => {
     return (
-<div id='home' className='overflow-hidden'>
+<Element name='home'>
+<div className='overflow-hidden'>
     {/* img */}
   <div className=" hero-content justify-between px-15 flex-col lg:flex-row-reverse">
     <div data-aos="fade-left">  
@@ -40,11 +41,11 @@ Enhancing digital experiences that are smooth, scalable, and made to impress.
       </div>
       <div data-aos="fade-up">
       <Link className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500 ">Resume<IoArrowDownCircleOutline size={20}/></Link>
-      <a href="#contact" className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500 ms-4">Contact Me<MdOutlineMail size={20}/></a>
+      <Link to="contact" className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500 ms-4">Contact Me<MdOutlineMail size={20}/></Link>
 </div>
 {/* social icon */}
     <div className="flex gap-6 items-center py-8" data-aos="fade-up">
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a href="https://github.com/atik735" target="_blank" rel="noreferrer">
         <div className="text-white text-2xl bg-[#0f0f1a] rounded-xl p-3 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/60 transition duration-300">
           <FaGithub />
         </div>
@@ -54,7 +55,7 @@ Enhancing digital experiences that are smooth, scalable, and made to impress.
           <FaLinkedinIn />
         </div>
       </a>
-      <a href="https://instagram.com" target="_blank" rel="noreferrer">
+      <a href="https://www.instagram.com/atik_h35/" target="_blank" rel="noreferrer">
       <div className="text-white text-2xl bg-[#0f0f1a] rounded-xl p-3 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/60 transition duration-300">
           <FaInstagram />
         </div>
@@ -63,6 +64,7 @@ Enhancing digital experiences that are smooth, scalable, and made to impress.
        </div>
   </div>
 </div>
+    </Element>
     );
 };
 

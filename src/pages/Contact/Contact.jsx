@@ -5,7 +5,6 @@ import { IoLocationOutline, IoShareSocialOutline } from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { CiPhone } from 'react-icons/ci';
-import { FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { Element } from 'react-scroll';
 
@@ -17,8 +16,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_7rduyo1', 'template_ow3425f', form.current, {
-        publicKey: 'gIl9elp9Kbmc9LJHt',
+      .sendForm('service_h0tr3wb', 'template_nwwpawk', form.current, {
+        publicKey: 'vU7cey4eQ_SZosO9i',
       })
       .then(
         (data) => {

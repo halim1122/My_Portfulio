@@ -8,7 +8,7 @@ const Projects = () => {
     <Element name="portfolio">
     <section className="py-20 my-5 px-4 bg-[#0f0f1a] text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent" data-aos="zoom-in">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent" data-aos="zoom-in">
           My Projects
         </h2>
 
@@ -32,7 +32,7 @@ className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-5 shadow-l
     className="w-full h-48 object-cover rounded-lg transform hover:scale-105 transition-transform duration-300"
   />
 </div>
-              <h3 className="text-xl font-semibold text-indigo-300 mb-2">
+              <h3 className="text-xl font-semibold text-[#b76efa] mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-300 text-sm mb-4">
@@ -43,12 +43,12 @@ className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-5 shadow-l
                   to={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
+                  className="text-[#ab057d] hover:underline"
                 >
                   Live Demo ↗
                 </Link>
                  <Link to={`/projects/${project.id}`}
-                  className="flex items-center gap-1 bg-slate-700 px-3 py-1 rounded text-gray-200 hover:bg-slate-600 transition"
+                  className="flex items-center gap-1 bg-slate-700 px-3 py-1 rounded text-indigo-300 hover:bg-slate-600 transition"
                 >
                   Details <FaArrowRight size={16} />
                 </Link>

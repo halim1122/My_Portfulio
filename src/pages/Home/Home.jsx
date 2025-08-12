@@ -1,10 +1,9 @@
-import React from 'react';
 import { RiGeminiLine } from "react-icons/ri";
 import { TypeAnimation } from 'react-type-animation';
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 import Halim from '../../assets/WhatsApp_Image_2025-08-08_at_16_LE_upscale_balanced_x4__1_-removebg-preview.png'
 import { MdOutlineMail } from "react-icons/md";
-import { FaGithub, FaLinkedinIn, FaInstagram, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn,FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
 import { Link,Element } from 'react-scroll';
 
 const Home = () => {

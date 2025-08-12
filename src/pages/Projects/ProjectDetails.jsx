@@ -14,16 +14,19 @@ const ProjectDetails = () => {
     <section className="max-w-6xl mx-auto p-6">
       <Link
         to="/"
-        className="btn mb-6 gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500"
+        className="btn mb-6 gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-[#ab057d] drop-shadow-md drop-shadow-[#ab057d]"
         rel="noreferrer"
       >
         <IoCaretBackCircleOutline size={20} /> Go Back Home
       </Link>
-
+<div className="image">
+  
+          <img src={project.image} className="rounded mb-4 w-full shadow-md shadow-purple-400" />
+</div>
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left Side: All except key features */}
         <div className="lg:w-2/3" data-aos="fade-right">
-          <img src={project.image} className="rounded mb-4 w-full" />
+          {/* <img src={project.image} className="rounded mb-4 w-full" /> */}
           <h2 className="text-3xl font-bold mb-2">{project.title}</h2>
           <p className="text-gray-300 mb-4">{project.description}</p>
 
@@ -32,7 +35,7 @@ const ProjectDetails = () => {
             {project.tech.map((t, i) => (
               <span
                 key={i}
-                className="badge badge-outline text-gray-400 border border-indigo-500"
+                className="badge badge-outline text-gray-400 border border-[#ab057d]"
               >
                 {t}
               </span>
@@ -57,7 +60,7 @@ const ProjectDetails = () => {
             <Link
               to={project.demoLink}
               target="_blank"
-              className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500"
+              className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-[#ab057d] drop-shadow-md drop-shadow-[#ab057d]"
               rel="noreferrer"
             >
               Live Site <GoArrowUpRight size={20} />
@@ -65,7 +68,7 @@ const ProjectDetails = () => {
             <Link
               to={project.github}
               target="_blank"
-              className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-indigo-500 drop-shadow-md drop-shadow-indigo-500"
+              className="btn gradient-to-r from-blue-500 via-purple-600 to-purple-500 border border-[#ab057d] drop-shadow-md drop-shadow-[#ab057d]"
               rel="noreferrer"
             >
               <FaGithub size={20} /> GitHub
@@ -74,7 +77,7 @@ const ProjectDetails = () => {
         </div>
 
         {/* Right Side: Key Features Only */}
-        <div className="lg:w-1/3 bg-[#1f2937] rounded-xl p-5 shadow-lg border border-indigo-500 h-fit" data-aos="fade-left">
+        <div className="lg:w-1/3 bg-[#1f2937] rounded-xl p-5 shadow-lg border border-[#ab057d] h-fit" data-aos="fade-left">
           <h4 className="text-xl font-semibold text-purple-400 mb-3">
             🔑 Key Features
           </h4>

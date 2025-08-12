@@ -1,97 +1,87 @@
 const projectsData = [
   {
-    id: "plant-care-tracker",
-    title: "PlantCare Tracker",
-    image: "https://i.ibb.co/7tf7jJ4p/Screenshot-2025-06-29-123125.png",
-    demoLink: "https://plant-care-client.web.app/",
-    github: "https://github.com/atik735/Plant-care-client",
+    id: "online tuorigem sports",
+    title: "Wanderora",
+    image: "https://i.ibb.co.com/pB3mwFm4/Screenshot-2025-08-12-160559.png",
+    demoLink: "https://a11-tourist-auth.web.app/",
+    github: "https://github.com/halim1122/b11a12-client-side",
     description:
-      "Track plant watering schedules, plant health, and care logs with Firebase Auth.",
+      "Explore top travel destinations and curated packages for unforgettable adventures. Explore top trips and unique adventures.",
     features: [
-  "🪴 Add, view, update, and delete your plants with full CRUD functionality.",
-  "🔐 Secure user authentication with protected routes.",
-  "📆 Log and track watering schedules, health status, and care levels.",
-  "🌙 Dark/Light theme toggle.",
-  "🔍 Sort plants by Next Watering Date or Care Level.",
-  "🖼️ Modern UI with responsive design and slider banner.",
-  "🧾 Real-time feedback via styled toast messages and confirmation modals."
-],
-    tech: ["React", "Tailwind CSS", "Firebase", "Node.js"],
-        challenges: [
-      "Integrating calendar-based date tracking for watering",
-      "Handling image uploads and previews smoothly",
-      "Designing a dashboard"
+      "🪴Booking, view, Pay, and delete your Boking Trips with full CRUD functionality.",
+      "🔐 Secure user authentication with protected routes.",
+      "📆 see top rateing tripe and booking tripe",
+      "🔍 You select your tour-guide.",
+      "🖼️ Modern UI with responsive design and slider banner.",
+      "🧾 Real-time feedback via styled toast messages and confirmation modals."
+    ],
+    tech: ["React", "Tailwind CSS", "Firebase", "Node.js", "MongoDB", "JWT"],
+    challenges: [
+      "Implement pagination at the footer of all the tables you have implemented (show 10 users at a time).",
+      "Implement JWT on authentication",
+      "If a user books more than 3 times, he/she will see a congratulations message."
     ],
     future: [
-      "Add email reminders for watering days",
-      "Expand to support multiple user plant collections",
-      "Designing a fully dynamic dashboard"
+      "The user will be able to manage their profile.",
+      "The user can select their guide.",
+      "The user can see all tripe."
     ],
-    side:"left"
+    side: "left"
   },
   {
-    id: "booknest",
-    title: "BookNest - Library System",
-    image: "https://i.ibb.co/cKKr2CKR/Screenshot-2025-06-29-123154.png",
-    demoLink: "https://library-management-ad416.web.app/",
-    github: "https://github.com/atik735/Library-client",
+    id: "BrainBand",
+    title: "Assignment - improve your brain ",
+    image: "https://i.ibb.co.com/LDMMzz1T/Screenshot-2025-08-12-154847.png",
+    demoLink: "https://assignment-for-auth-41899.web.app/",
+    github: "https://github.com/halim1122/b11a11-client-side",
     description:
-      "Library system with book borrowing, return logic, category filtering, and admin panel.",
+      "This platform lets users manage assignments with difficulty levels, marks, authentication, search, filtering, and role-based access.",
     features: [
-  "🔐 Firebase Authentication (Email/Password + Google Sign In)",
-  "📚 Browse and filter books by category",
-  "🛡️ Protected routes (borrowing requires login)",
-  "📥 Borrow & Return books with date tracking",
-  "📦 Real-time book quantity updates",
-  "✨ Responsive layout for mobile and desktop",
-  "⭐ Book ratings displayed using a React rating component",
-  "🔍 Search/filter available books",
-  "🧑‍💻 User profile update support",
-  "🔗 Dynamic routing for books and categories",
-  "⚠️ Toast and popup alerts for better UX",
-  "📁 Structured folder system for scalable development"
-],
-    tech: ["React", "Express", "MongoDB", "JWT"],
-        challenges: [
-      "Managing quantity changes on borrow/return in real time",
-      "Building nested routes for categories and individual books",
-      "JWT-based user role protection (admin, borrower)"
+      "User Authentication – Login/Logout system for accessing protected features.",
+      "Assignment Listing with Filters – View assignments with difficulty tags and marks, filter by level.",
+      "Search Functionality – Search assignments by name.",
+      "CRUD Operations – View, edit, and delete assignments from cards.",
+      "Assignment Creation – Add new assignments via the Create Assignment page.",
+      "Role-based Pages – Separate pages for pending and attempted assignments.",
     ],
-        future: [
-      "Admin panel for adding/removing books",
-      "User borrow history and due date system",
-      "Improve search filter using fuzzy search"
+    tech: ["React", "Express", "MongoDB", "JWT", "JavaScript", "Firebase"],
+    challenges: [
+      "Form Validation – Validate create/update assignment and auth forms with proper rules.",
+      "Filter & Search – Backend-based filter by difficulty and search assignments.",
+      "JWT Authentication – Generate, store, and verify JWT for private routes.",
+      "Theme Toggle – Switch between light and dark modes system-wide."
+    ],
+    future: [
+      "Assignment Deadlines – Set and display submission deadlines.",
+      "Grading System – Automated or manual grading with feedback.",
+      "File Attachments – Allow uploading files with assignments."
     ],
     side: "up"
   },
   {
-    id: "bill-management",
-    title: "Bill Management",
-    image: "https://i.ibb.co/Xk7GXwT5/Screenshot-2025-06-29-122955.png",
-    demoLink: "https://bill-pays-98812.web.app/",
-    github: "https://github.com/atik735/Bill-Management",
+    id: "HobbyHub",
+    title: "Create Hobby",
+    image: "https://i.ibb.co.com/NggZ8R5N/Screenshot-2025-08-12-170758.png",
+    demoLink: "https://hobby-auth-app.web.app/",
+    github: "https://github.com/halim1122/b11a10-client-side",
     description:
-      "Bill Management system with balance check, Firebase login, cancel payment & responsive UI.",
+      "HobbyHub is a community platform that lets users discover, create, and join local hobby groups with secure authentication and interactive features.",
     features: [
-      "🔐 Firebase Authentication (Email/Password)",
-"➕ Add new bills with amount and date",
-"✅ Mark bills as paid/unpaid",
-"🧮 Summary section for total paid/unpaid",
-"🧾 Bill history list with status filter",
-"🎯 User-specific data tracking",
-"📱 Fully responsive and mobile-first layout",
-"📣 Toast notifications on actions",
+      "Firebase Authentication (Email/Password)",
+      "Real-time data fetching and updates",
+      "Group search and filter functionality.",
+      "Persistent login state on page reload.",
+      "User can see featured ongoing groups section",
     ],
-    tech: ["React", "Firebase", "Tailwind"],
+    tech: ["React", "Firebase", "Tailwind","CSS", "JavaScript"],
     challenges: [
-      "Ensuring real-time balance updates across multiple components",
-      "Protecting sensitive routes with Firebase Auth context",
-      "Implementing conditional logic to block overpayment"
+      "Dark/light theme toggle on the home page.",
+      "Integration of Lottie React animations.",
+      "Disable joining groups if the start date has passed."
     ],
     future: [
-      "Add downloadable payment receipts (PDF)",
-      "Show transaction history with filters",
-      "Admin dashboard for bill analytics"
+      "Show transaction history with Hobbys",
+      "Admin dashboard for See all users"
     ],
     side: "right"
   },

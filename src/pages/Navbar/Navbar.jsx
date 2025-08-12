@@ -66,7 +66,7 @@ const Navbar = () => {
           activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300 "
         >
-          Portfolio
+          My Projects
         </Link>
       </li>
       <li>

@@ -1,10 +1,10 @@
-# Md. Atik Hassan - Portfolio Website
+# Abdul Halim - Portfolio Website
 
 Welcome to my personal portfolio website!  
 This site showcases my skills, projects, and contact information as a Full-Stack Web Developer.
 
 ## 🚀 Live Demo
-[https://atiksportfolio.netlify.app](https://atiksportfolio.netlify.app)
+[http://my-portfulio.surge.sh](http://my-portfulio.surge.sh)
 
 ## 📋 About This Project
 This portfolio website is built to highlight my web development journey and demonstrate my skills in building responsive, modern web applications. It includes sections for:
@@ -32,14 +32,14 @@ This portfolio website is built to highlight my web development journey and demo
 
 ## 🔧 How to Run Locally
 1. Clone the repository 
-https://github.com/atik735/My_Portfolio.git
+https://github.com/halim1122/My_Portfulio
  2. Navigate into the project folder  
 npm i
 npm run dev
 
 ## 📫 Contact Me
 Feel free to reach out via email:  
-**atikh01003@gmail.com**  
+**abdulahlim1100@gmail.com**  
 Or through the contact form on the website.
 
 ---

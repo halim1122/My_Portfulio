@@ -11,7 +11,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300"
         >
           Home
@@ -24,7 +24,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300"
         >
           About
@@ -37,7 +37,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300"
         >
           Skills
@@ -50,7 +50,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300 "
         >
           Education
@@ -63,7 +63,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300 "
         >
           Portfolio
@@ -76,7 +76,7 @@ const Navbar = () => {
           duration={500}
           offset={-70}
           spy={true}
-          activeClass="bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text text-transparent"
+          activeClass="bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent"
           className="cursor-pointer transition-colors duration-300 "
         >
           Contact
@@ -116,9 +116,9 @@ const Navbar = () => {
           </div>
           <Link
             to="home"
-            className="text-xl font-bold bg-gradient-to-r from-purple-500 via-purple-600 to-blue-500 bg-clip-text cursor-pointer text-transparent"
+            className="text-xl font-bold bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text cursor-pointer text-transparent"
           >
-            Atik Hassan
+            Abdul Halim
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex">

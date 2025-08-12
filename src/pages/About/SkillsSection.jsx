@@ -22,7 +22,7 @@ const SkillsSection = () => {
     <Element name='skills'>
     <section className="py-16 px-4 max-w-6xl mx-auto">
       <h2 data-aos="flip-up" className="text-4xl font-bold text-center mb-10 ">
-       <span className='bg-gradient-to-r from-blue-500 via-purple-600 to-purple-500 bg-clip-text text-transparent'> My Skills</span>
+       <span className='bg-gradient-to-r from-[#b76efa] via-[#ab057d] to-[#f82b81] bg-clip-text text-transparent'> My Skills</span>
       </h2>
 
       <motion.div
@@ -30,13 +30,13 @@ const SkillsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="bg-[#0f0f1a] border border-purple-500/40 rounded-xl p-6 shadow-md shadow-purple-500/10"
+        className="bg-[#0f0f1a] border border-[#ab057d]/40 rounded-xl p-6 shadow-md shadow-purple-500/10"
       >
         <div className="flex flex-wrap gap-4 justify-center">
           {allSkills.map((skill) => (
             <div
               key={skill.name}
-              className="flex items-center gap-3 bg-purple-600/10 text-purple-300 border border-purple-500/20 px-4 py-2 rounded-lg text-sm font-medium transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30"
+              className="flex items-center gap-3 bg-[#ab057d]/10 text-purple-400 border border-purple-500/20 px-4 py-2 rounded-lg text-sm font-medium transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30"
             >
               <img src={skill.image} alt={skill.name} className="w-7 h-7" />
               {skill.name}
